@@ -1,0 +1,19 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.container{
+
+}
+.carouse {
+    width:800px;
+    float: left;
+}
+#hot{
+    width: 400px;
+    height: 800px;
+    background-color: #fff;
+}
+.hotTitle{
+    color:#333;
+    font-size:42px;
+}

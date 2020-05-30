@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Dessert.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <title>🧁Dessert 后台 </title>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 414px;
+        }
+        .auto-style3 {
+            text-align: right;
+        }
+        .auto-style4 {
+            width: 443px
+        }
+    </style>
+</head>
+<body style="background-color: #ffdff7;">
+    <form id="form1" runat="server">
+        
+        <div>
+            <table class="auto-style1" cellspacing="20"  style="background-color: #CCCCCC">
+            <tr>
+              <td style="background-color: #CCCCCC" class="auto-style4"><img src="../data/Admin_img/circle-cropped.png" alt="Cakes" /></td>
+              <td>
+                <h1>🧁Dessert Bar </h1>
+              </td>
+            </tr>
+      </table>
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2">
+                            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" Height="317px" ImageSet="Simple" Width="211px">
+                                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                                <ParentNodeStyle Font-Bold="False" />
+                                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                            </asp:TreeView>
+                            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                        </td>
+                        <td style="vertical-align: top">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                                           </asp:ContentPlaceHolder>
+
+                        </td>
+                    </tr>
+                    <tr style="background-color: #CCCCCC">
+                        <td>
+                            <h1 class="auto-style3"><img src="../data/Admin_img/logo.png" alt="Cakes" /</h1>
+                        </td>
+                        <td>
+                            <h1>Dessert Bar <small>Designed by 黄佳玲 危紫航 张嘉家😊</small></h1>
+                        </td>
+                    </tr>
+                </table>
+            
+        </div>
+    </form>
+</body>
+</html>

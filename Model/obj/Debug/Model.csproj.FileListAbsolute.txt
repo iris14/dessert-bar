@@ -1,0 +1,6 @@
+F:\asp\大作业\Dessert\Model\bin\Debug\Model.dll
+F:\asp\大作业\Dessert\Model\bin\Debug\Model.pdb
+F:\asp\大作业\Dessert\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\asp\大作业\Dessert\Model\obj\Debug\Model.dll
+F:\asp\大作业\Dessert\Model\obj\Debug\Model.pdb
+F:\asp\大作业\Dessert\Model\obj\Debug\Model.csprojAssemblyReference.cache

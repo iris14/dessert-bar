@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Admin/Admin_Index.aspx" title="🧁后台管理首页"  description="后台管理首页">
+    <siteMapNode url="" title="🧁用户管理"  description="用户管理">
+      <siteMapNode url="" title="普通用户信息管理"  description="普通用户信息管理" />
+      <siteMapNode url="" title="管理员信息管理"  description="管理员信息管理" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="🧁文章管理"  description="文章管理" >
+      <siteMapNode url="" title="审核用户文章"  description="审核用户文章" />
+      <siteMapNode url="" title="未审核通过文章管理"  description="未审核通过文章管理" />
+      <siteMapNode url="" title="已审核通过文章管理"  description="已审核通过文章管理" />
+      <siteMapNode url="" title="官方文章管理"  description="官方文章管理" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

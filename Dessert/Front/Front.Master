@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Front.master.cs" Inherits="Dessert.Front.Front" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css" />
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>   
+    
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <title>🧁Dessert Bar</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #ffdff7;">
+    <form id="form1" runat="server">
+        
+        <!-- 导航放置处 -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                     <a class="navbar-brand" href="#">Dessert Bar</a>
+                </div>
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                      <!--甜品分类-->
+                      <li class="dropdown" >
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dessert-class">甜品分类<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">早餐</a></li>
+                        <li><a href="#">午餐</a></li>
+                        <li><a href="#">晚餐</a></li>
+                        <li><a href="#">下午茶</a></li>
+                        <li><a href="#">零食</a></li>
+                      </ul>
+                    </li>
+                      <!--甜品分类-->
+                      <li><a href="#">达人排行榜</a></li>
+                  </ul>
+                     <!--导航条右侧-->
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/index.html"><span class="glyphicon glyphicon-globe"></span>  登录</asp:HyperLink></li>
+                    <li class="dropdown" id="user-agent">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="user">
+                            <img src="../Data/Front_img/user.jpg" alt="Head Portrait" class="img-circle" style="width:30px" />
+                            个人中心
+                            <b class="caret"></b>
+                        </a>
+                        <!--个人中心下拉菜单-->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">发布教程</a></li>
+                            <li><a href="#">EJB</a></li>
+                            <li><a href="#">Jasper Report</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">分离的链接</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">另一个分离的链接</a></li>
+                        </ul>
+                    </li>
+                      <li> </li>
+                  </ul>
+                     <!--导航条右侧-->
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- 主照片放置处 -->
+        <div class="banner" style="margin-top:10px">
+           <div class="form-horizontal" style="margin-top:23vh; padding:15vh 15vh 15vh 15vh;background-color:rgba(255, 223, 247,0.5)">
+              
+              <div class="form-group">
+                   <label for="TextBox1" class="col-sm-1 control-label" style="color:black;"><span class="glyphicon glyphicon-search" style="font-size:20px"></span></label>
+                  <div class="col-sm-10">
+                      <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+                  </div>
+                  <asp:Button Text="搜索" runat="server" CssClass="btn btn-info" />
+              </div>
+               <div class="logo" style="margin-top:1000px" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" ><a href="#" >Dessert Bar</a> </div>
+              </div>
+          
+        </div>
+        <div class="content" style="margin-top:50px">
+            <!-- 内容放置处 -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <img src="../Data/Front_img/icon.png" alt="甜點圖示"/>
+                <div><h1>Dessert Bar <small>Designed by 黄佳玲 危紫航 张嘉家😊</small></h1></div>
+            </footer>
+        </div>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+      <script>
+          AOS.init();
+          $('.collapse').collapse();
+          $('#dessert-class').mouseover(function () {
+              $(this).dropdown('toggle');
+          });
+          $('#dessert-class').mouseout(function () {
+              $(this).dropdown('toggle');
+          });
+          if ( $("#user").length > 0 ) {
+                     $('#user').mouseover(function () {
+                      $(this).dropdown('toggle');
+                  });
+                  $('#user').mouseout(function () {
+                      $(this).dropdown('toggle');
+                  });
+            }
+      </script>   
+    </form>
+</body>
+</html>
