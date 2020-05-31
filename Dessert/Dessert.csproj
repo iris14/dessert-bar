@@ -69,8 +69,10 @@
   <ItemGroup>
     <Content Include="Admin\Admin_Index.aspx" />
     <Content Include="Admin\index.html" />
-    <Content Include="App_Data\DessertDataBase.mdf" />
-    <Content Include="App_Data\DessertDataBase_log.ldf" />
+    <Content Include="App_Data\DessertDataBase .mdf" />
+    <Content Include="App_Data\DessertDataBase _log.ldf">
+      <DependentUpon>DessertDataBase .mdf</DependentUpon>
+    </Content>
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -261,7 +263,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.sitemap" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

@@ -6,11 +6,11 @@
       <siteMapNode url="" title="管理员信息管理"  description="管理员信息管理" />
     </siteMapNode>
 
-    <siteMapNode url="" title="🧁文章管理"  description="文章管理" >
-      <siteMapNode url="" title="审核用户文章"  description="审核用户文章" />
-      <siteMapNode url="" title="未审核通过文章管理"  description="未审核通过文章管理" />
-      <siteMapNode url="" title="已审核通过文章管理"  description="已审核通过文章管理" />
-      <siteMapNode url="" title="官方文章管理"  description="官方文章管理" />
+    <siteMapNode url="" title="🧁教程管理"  description="教程管理" >
+      <siteMapNode url="" title="审核用户教程"  description="审核用户教程" />
+      <siteMapNode url="" title="未审核通过教程管理"  description="未审核通过教程管理" />
+      <siteMapNode url="" title="已审核通过教程管理"  description="已审核通过教程管理" />
+      <siteMapNode url="" title="官方教程管理"  description="官方教程管理" />
     </siteMapNode>
   </siteMapNode>
 </siteMap>
