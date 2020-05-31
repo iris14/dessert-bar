@@ -40,8 +40,16 @@ namespace ThreeLayer.BLL
 
         public DataSet showUserData(ThreeLayer.Model.Users users)
         {
+            //显示用户个人资料
             ThreeLayer.DAL.UsersService userData = new DAL.UsersService();
             DataSet dataSet = userData.SelectPersonData(users);
+            return dataSet;
+        }
+        public DataSet showAllUserData()
+        {
+            //显示所有用户个人资料
+            ThreeLayer.DAL.UsersService userData = new DAL.UsersService();
+            DataSet dataSet = userData.SelectAllData();
             return dataSet;
         }
     }

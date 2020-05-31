@@ -69,9 +69,11 @@
   <ItemGroup>
     <Content Include="Admin\Admin_Index.aspx" />
     <Content Include="Admin\index.html" />
-    <Content Include="App_Data\DessertDataBase .mdf" />
-    <Content Include="App_Data\DessertDataBase _log.ldf">
-      <DependentUpon>DessertDataBase .mdf</DependentUpon>
+    <Content Include="Admin\UserArticle.aspx" />
+    <Content Include="Admin\UserManage.aspx" />
+    <Content Include="App_Data\DessertDataBase.mdf" />
+    <Content Include="App_Data\DessertDataBase_log.ldf">
+      <DependentUpon>DessertDataBase.mdf</DependentUpon>
     </Content>
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -169,6 +171,20 @@
     </Compile>
     <Compile Include="Admin\Admin_Index.aspx.designer.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserArticle.aspx.cs">
+      <DependentUpon>UserArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserArticle.aspx.designer.cs">
+      <DependentUpon>UserArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front\breakfast.aspx.cs">
       <DependentUpon>breakfast.aspx</DependentUpon>
