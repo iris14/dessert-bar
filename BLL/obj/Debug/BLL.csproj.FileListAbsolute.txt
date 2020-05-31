@@ -31,3 +31,14 @@ E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.csproj.CopyComplete
 E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.dll
 E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.pdb
+D:\dessert\BLL\bin\Debug\BLL.dll
+D:\dessert\BLL\bin\Debug\BLL.pdb
+D:\dessert\BLL\bin\Debug\DAL.dll
+D:\dessert\BLL\bin\Debug\Model.dll
+D:\dessert\BLL\bin\Debug\DAL.pdb
+D:\dessert\BLL\bin\Debug\Model.pdb
+D:\dessert\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\dessert\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\dessert\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\dessert\BLL\obj\Debug\BLL.dll
+D:\dessert\BLL\obj\Debug\BLL.pdb

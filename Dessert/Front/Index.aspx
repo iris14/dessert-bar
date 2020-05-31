@@ -139,7 +139,7 @@
         <div class="new">
             <div>
 
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [DessertCourse] ORDER BY [CourseTime] DESC, [CourseBrowse] DESC" OnSelecting="SqlDataSource1_Selecting"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [DessertCourse] ORDER BY [CourseTag] DESC" OnSelecting="SqlDataSource1_Selecting" ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
                 <asp:DataList ID="DataList1" runat="server" DataKeyField="DessertId" RepeatColumns="4" RepeatDirection="Horizontal" Width="400px">
                     <HeaderTemplate>
                         <table class="nav-justified">
@@ -181,46 +181,7 @@
             <p class="typeTitle">人气分类</p>
             <div>
 
-                <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource1" Height="280px" RepeatColumns="3" RepeatDirection="Horizontal" Width="380px" DataKeyField="CourseId">
-                    <ItemTemplate>
-                        CourseId:
-                        <asp:Label ID="CourseIdLabel" runat="server" Text='<%# Eval("CourseId") %>' />
-                        <br />
-                        UserId:
-                        <asp:Label ID="UserIdLabel" runat="server" Text='<%# Eval("UserId") %>' />
-                        <br />
-                        AdminId:
-                        <asp:Label ID="AdminIdLabel" runat="server" Text='<%# Eval("AdminId") %>' />
-                        <br />
-                        CourseTitle:
-                        <asp:Label ID="CourseTitleLabel" runat="server" Text='<%# Eval("CourseTitle") %>' />
-                        <br />
-                        CourseDetail:
-                        <asp:Label ID="CourseDetailLabel" runat="server" Text='<%# Eval("CourseDetail") %>' />
-                        <br />
-                        CourseTime:
-                        <asp:Label ID="CourseTimeLabel" runat="server" Text='<%# Eval("CourseTime") %>' />
-                        <br />
-                        CourseTag:
-                        <asp:Label ID="CourseTagLabel" runat="server" Text='<%# Eval("CourseTag") %>' />
-                        <br />
-                        CourseComment:
-                        <asp:Label ID="CourseCommentLabel" runat="server" Text='<%# Eval("CourseComment") %>' />
-                        <br />
-                        CourseCover:
-                        <asp:Label ID="CourseCoverLabel" runat="server" Text='<%# Eval("CourseCover") %>' />
-                        <br />
-                        CourseBrowse:
-                        <asp:Label ID="CourseBrowseLabel" runat="server" Text='<%# Eval("CourseBrowse") %>' />
-                        <br />
-                        CourseCheck:
-                        <asp:Label ID="CourseCheckLabel" runat="server" Text='<%# Eval("CourseCheck") %>' />
-                        <br />
-                        CourseUserAdmin:
-                        <asp:Label ID="CourseUserAdminLabel" runat="server" Text='<%# Eval("CourseUserAdmin") %>' />
-                        <br />
-                        <br />
-                    </ItemTemplate>
+                <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource1" Height="280px" RepeatColumns="3" RepeatDirection="Horizontal" Width="380px">
                 </asp:DataList>
 
             </div>

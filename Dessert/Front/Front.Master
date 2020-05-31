@@ -54,7 +54,7 @@
                   </ul>
                      <!--导航条右侧-->
                   <ul class="nav navbar-nav navbar-right">
-                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/index.html"><span class="glyphicon glyphicon-globe"></span>  登录</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="login.aspx"><span class="glyphicon glyphicon-globe"></span>  登录</asp:HyperLink></li>
                     <li class="dropdown" id="user-agent">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="user">
                             <img src="../Data/Front_img/user.jpg" alt="Head Portrait" class="img-circle" style="width:30px" />

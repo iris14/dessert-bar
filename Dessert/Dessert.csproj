@@ -101,6 +101,7 @@
     <Content Include="Front\register.aspx" />
     <Content Include="Front\WebForm1.aspx" />
     <Content Include="Front\WebForm2.aspx" />
+    <Content Include="Front\registerSuc.aspx" />
     <Content Include="images\banner1.jpg" />
     <Content Include="images\banner2.jpg" />
     <Content Include="images\banner3.jpg" />
@@ -217,6 +218,13 @@
     </Compile>
     <Compile Include="Front\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\registerSuc.aspx.cs">
+      <DependentUpon>registerSuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\registerSuc.aspx.designer.cs">
+      <DependentUpon>registerSuc.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
