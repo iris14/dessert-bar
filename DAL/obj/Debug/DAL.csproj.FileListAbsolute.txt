@@ -7,3 +7,12 @@ F:\asp\大作业\Dessert\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 F:\asp\大作业\Dessert\DAL\obj\Debug\DAL.csproj.CopyComplete
 F:\asp\大作业\Dessert\DAL\obj\Debug\DAL.dll
 F:\asp\大作业\Dessert\DAL\obj\Debug\DAL.pdb
+F:\asp\实验作业\Dessert\DAL\bin\Debug\DAL.dll
+F:\asp\实验作业\Dessert\DAL\bin\Debug\DAL.pdb
+F:\asp\实验作业\Dessert\DAL\bin\Debug\Model.dll
+F:\asp\实验作业\Dessert\DAL\bin\Debug\Model.pdb
+F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.dll
+F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.pdb

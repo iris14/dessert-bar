@@ -36,7 +36,7 @@ namespace ThreeLayer.DAL
                 return true;
             }
         }
-        public int CheckCard(ThreeLayer.Model.Users myUser)
+        /*public int CheckCard(ThreeLayer.Model.Users myUser)
         {
             //忘记密码,检验身份证
             string strsql = "select UserTel from [Users] where UserCard='" + myUser.UserCard + "'";
@@ -44,14 +44,14 @@ namespace ThreeLayer.DAL
             DataSet dataSet = sqlHelper.ReadRecordDS(strsql);
             if (dataSet.Tables[0].Rows.Count > 0)
             {
-                
+
             }
-            
+
         }
 
         public bool UpdatePwd(ThreeLayer.Model.Users myUser)
         {
-            string strsql="update [Users] set "
-        }
+            string strsql = "update [Users] set "
+        }*/
     }
 }

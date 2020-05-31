@@ -10,9 +10,9 @@ namespace ThreeLayer.DAL
 {
     public class DessertService
     {
-        public DataSet showDessertSort(ThreeLayer.Model.DessertSort dessertSort)
+        /*public DataSet showDessertSort(ThreeLayer.Model.DessertSort dessertSort)
         {
             string strsql="select * from DessertSort where SortId="+dessertSort.SortName
-        }
+        }*/
     }
 }

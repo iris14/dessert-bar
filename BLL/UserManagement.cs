@@ -34,6 +34,5 @@ namespace ThreeLayer.BLL
                 return false;
             }
         }
-        public 
     }
 }
