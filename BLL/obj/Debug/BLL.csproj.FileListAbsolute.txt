@@ -20,3 +20,14 @@ F:\asp\实验作业\Dessert\BLL\bin\Debug\Model.dll
 F:\asp\实验作业\Dessert\BLL\bin\Debug\DAL.pdb
 F:\asp\实验作业\Dessert\BLL\bin\Debug\Model.pdb
 F:\asp\实验作业\Dessert\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\ASP\TeamWorkGit\BLL\bin\Debug\BLL.dll
+E:\ASP\TeamWorkGit\BLL\bin\Debug\BLL.pdb
+E:\ASP\TeamWorkGit\BLL\bin\Debug\DAL.dll
+E:\ASP\TeamWorkGit\BLL\bin\Debug\Model.dll
+E:\ASP\TeamWorkGit\BLL\bin\Debug\DAL.pdb
+E:\ASP\TeamWorkGit\BLL\bin\Debug\Model.pdb
+E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.dll
+E:\ASP\TeamWorkGit\BLL\obj\Debug\BLL.pdb

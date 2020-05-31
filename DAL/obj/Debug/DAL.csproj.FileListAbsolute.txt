@@ -16,3 +16,12 @@ F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.csproj.CopyComplete
 F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.dll
 F:\asp\实验作业\Dessert\DAL\obj\Debug\DAL.pdb
+E:\ASP\TeamWorkGit\DAL\bin\Debug\DAL.dll
+E:\ASP\TeamWorkGit\DAL\bin\Debug\DAL.pdb
+E:\ASP\TeamWorkGit\DAL\bin\Debug\Model.dll
+E:\ASP\TeamWorkGit\DAL\bin\Debug\Model.pdb
+E:\ASP\TeamWorkGit\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\ASP\TeamWorkGit\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\ASP\TeamWorkGit\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\ASP\TeamWorkGit\DAL\obj\Debug\DAL.dll
+E:\ASP\TeamWorkGit\DAL\obj\Debug\DAL.pdb
