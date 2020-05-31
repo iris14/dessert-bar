@@ -24,7 +24,7 @@ namespace Dessert.Front
             ThreeLayer.Model.Users myUser = new ThreeLayer.Model.Users();
             myUser.UserTel = strUserphone;
             myUser.UserPwd = strPassword;
-            if(myUserManage.CheckUser(myUser) == true)
+            if(myUserManage.CheckUser(myUser) != 0)
             {
                 Response.Redirect("index.aspx");
             }

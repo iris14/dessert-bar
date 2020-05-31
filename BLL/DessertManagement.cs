@@ -12,8 +12,17 @@ namespace ThreeLayer.BLL
     {
         public DataSet showUserCourse(ThreeLayer.Model.DessertCourse dessert)
         {
+            //返回用户的所有教程
             ThreeLayer.DAL.DessertService dessertService = new ThreeLayer.DAL.DessertService();
             DataSet dataSet = dessertService.selectUserPassCourse(dessert);
+            return dataSet;
+        }
+        
+             public DataSet ShowUserAllCourse(ThreeLayer.Model.DessertCourse dessert)
+        {
+            //后台返回用户的所有教程
+            ThreeLayer.DAL.DessertService dessertService = new ThreeLayer.DAL.DessertService();
+            DataSet dataSet = dessertService.selectUserAllCourse(dessert);
             return dataSet;
         }
     }
