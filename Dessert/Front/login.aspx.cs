@@ -30,7 +30,8 @@ namespace Dessert.Front
             }
             else
             {
-                Response.Redirect("Index.aspx?userid=" + myUser.UserId);
+                Session["userid"] = myUser.UserId;
+                Response.Redirect("Index.aspx");
             }
         }
     }

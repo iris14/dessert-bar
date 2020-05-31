@@ -26,7 +26,27 @@ namespace Dessert.Front
 
         private void BindDataList(int currentpage)
         {
-          
+            pds.AllowPaging = true;
+            pds2.AllowPaging = true;
+            pds.PageSize = 8;
+            pds2.PageSize = 12;
+            pds.CurrentPageIndex = currentpage;
+            string strSql = "select * from Dessert";
+            SqlConnection conn = new SqlConnection();
+            //conn.ConnectionString = SqlDataSource1.ConnectionString;
+            //更活用的连接方式
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter(strSql, conn);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            pds.DataSource = ds.Tables[0].DefaultView;
+            pds2.DataSource = ds.Tables[0].DefaultView;
+            DataList1.DataSource = pds;
+            DataList2.DataSource = pds2;
+            DataList1.DataBind();
+            DataList2.DataBind();
+            conn.Close();
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
