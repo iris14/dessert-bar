@@ -49,13 +49,13 @@ namespace Dessert.Front {
         protected global::System.Web.UI.WebControls.DataList DataList1;
         
         /// <summary>
-        /// Label4 控件。
+        /// Label3 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
         /// DataList2 控件。
@@ -67,13 +67,13 @@ namespace Dessert.Front {
         protected global::System.Web.UI.WebControls.DataList DataList2;
         
         /// <summary>
-        /// Label5 控件。
+        /// Label4 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
         /// DataList3 控件。
@@ -85,13 +85,13 @@ namespace Dessert.Front {
         protected global::System.Web.UI.WebControls.DataList DataList3;
         
         /// <summary>
-        /// Label6 控件。
+        /// Label5 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
         /// DataList4 控件。
@@ -103,13 +103,13 @@ namespace Dessert.Front {
         protected global::System.Web.UI.WebControls.DataList DataList4;
         
         /// <summary>
-        /// Label7 控件。
+        /// Label6 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
         /// DataList5 控件。
