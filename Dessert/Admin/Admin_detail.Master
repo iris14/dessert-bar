@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_detail.master.cs" Inherits="Dessert.Admin.Admin_detail" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>🧁Dessert 后台 </title>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css" />
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>   
+    
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            text-align: right;
+        }
+        .auto-style4 {
+            width: 443px
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="container-fluid">
+             <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12">
+                     <table class="auto-style1" cellspacing="20"  style="background-color: #ffdff7;">
+                        <tr>
+                          <td style="background-color: #ffdff7;" class="auto-style4"><img src="../data/Admin_img/circle-cropped.png" alt="Cakes" /></td>
+                          <td>
+                            <h1>🧁Dessert Bar </h1>
+                          </td>
+                        </tr>
+                     </table>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12">
+                     <table class="auto-style1">
+                        <tr>
+                            <td colspan="2">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                                               </asp:ContentPlaceHolder>
+
+                            </td>
+                        </tr>
+                        <tr style="background-color: #ffdff7;">
+                            <td>
+                                <h1 class="auto-style3"><img src="../data/Admin_img/logo.png" alt="Cakes" /</h1>
+                            </td>
+                            <td>
+                                <h1>Dessert Bar <small>Designed by 黄佳玲 危紫航 张嘉家😊</small></h1>
+                            </td>
+                        </tr>
+                    </table>
+                 </div>
+             </div>
+        </div>
+    </form>
+</body>
+</html>
