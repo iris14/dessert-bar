@@ -88,11 +88,17 @@
     <Content Include="Data\Front_img\cake3.png" />
     <Content Include="Data\Front_img\cake4.png" />
     <Content Include="Data\Front_img\icon.png" />
+    <Content Include="Data\Front_img\login-image-1.png" />
+    <Content Include="Data\Front_img\login-image-2.png" />
+    <Content Include="Data\Front_img\login-image-3.png" />
     <Content Include="Data\Front_img\user.jpg" />
+    <Content Include="Data\Front_img\user.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Front\breakfast.aspx" />
     <Content Include="Front\Index.aspx" />
     <Content Include="Front\index.html" />
+    <Content Include="Front\login.aspx" />
+    <Content Include="Front\register.aspx" />
     <Content Include="Front\WebForm1.aspx" />
     <Content Include="Front\WebForm2.aspx" />
     <Content Include="images\banner1.jpg" />
@@ -177,6 +183,27 @@
     <Compile Include="Front\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Front\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\LoginRes.Master.cs">
+      <DependentUpon>LoginRes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\LoginRes.Master.designer.cs">
+      <DependentUpon>LoginRes.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Front\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Front\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -202,6 +229,7 @@
     <Content Include="css\style.css.map" />
     <Content Include="css\style.scss" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Front\LoginRes.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
