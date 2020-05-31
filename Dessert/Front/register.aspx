@@ -36,13 +36,17 @@
                         <asp:TextBox ID="TextBox2" runat="server" CssClass="txtphone"></asp:TextBox>
                     </div>
                     <div class="txt">
+                        <span style="letter-spacing: 10px;">用户名称:</span>
+                        <asp:TextBox ID="TextBox5" runat="server" CssClass="txtphone"></asp:TextBox>
+                    </div>
+                    <div class="txt">
                         <span style="letter-spacing: 10px;">登录密码：</span>
                         <asp:TextBox ID="TextBox3" runat="server" CssClass="txtphone"></asp:TextBox>
                     </div>
-                    <div class="txt">
+                    <%--<div class="txt">
                         <span style="letter-spacing: 10px;">重复密码：</span>
                         <asp:TextBox ID="TextBox4" runat="server" CssClass="txtphone"></asp:TextBox>
-                    </div>
+                    </div>--%>
                 </div>
             </ContentTemplate>
         </asp:UpdatePanel>

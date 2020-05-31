@@ -105,6 +105,10 @@
     <Content Include="Front\register.aspx" />
     <Content Include="Front\WebForm1.aspx" />
     <Content Include="Front\WebForm2.aspx" />
+    <Content Include="Front\registerSuc.aspx" />
+    <Content Include="Front\personalCenter.aspx" />
+    <Content Include="Front\personalMessage.aspx" />
+    <Content Include="Front\publishCourse.aspx" />
     <Content Include="images\banner1.jpg" />
     <Content Include="images\banner2.jpg" />
     <Content Include="images\banner3.jpg" />
@@ -215,6 +219,13 @@
     <Compile Include="Front\LoginRes.Master.designer.cs">
       <DependentUpon>LoginRes.Master</DependentUpon>
     </Compile>
+    <Compile Include="Front\Publish.Master.cs">
+      <DependentUpon>Publish.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\Publish.Master.designer.cs">
+      <DependentUpon>Publish.Master</DependentUpon>
+    </Compile>
     <Compile Include="Front\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -236,6 +247,34 @@
     <Compile Include="Front\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Front\registerSuc.aspx.cs">
+      <DependentUpon>registerSuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\registerSuc.aspx.designer.cs">
+      <DependentUpon>registerSuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\personalCenter.aspx.cs">
+      <DependentUpon>personalCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\personalCenter.aspx.designer.cs">
+      <DependentUpon>personalCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\personalMessage.aspx.cs">
+      <DependentUpon>personalMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\personalMessage.aspx.designer.cs">
+      <DependentUpon>personalMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\publishCourse.aspx.cs">
+      <DependentUpon>publishCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\publishCourse.aspx.designer.cs">
+      <DependentUpon>publishCourse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -248,6 +287,7 @@
     <Content Include="css\style.scss" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Front\LoginRes.Master" />
+    <Content Include="Front\Publish.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

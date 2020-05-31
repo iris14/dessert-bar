@@ -24,13 +24,14 @@ namespace Dessert.Front
             ThreeLayer.Model.Users myUser = new ThreeLayer.Model.Users();
             myUser.UserTel = strUserphone;
             myUser.UserPwd = strPassword;
-            if(myUserManage.CheckUser(myUser) != 0)
+            if(myUserManage.CheckUser(myUser) == true)
             {
-                Response.Redirect("index.aspx");
+                Response.Write("<script>alert('手机号码或密码错误！')</script>");
             }
             else
             {
-                
+                Session["userid"] = myUser.UserId;
+                Response.Redirect("Index.aspx");
             }
         }
     }

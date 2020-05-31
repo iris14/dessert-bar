@@ -11,7 +11,8 @@ namespace Dessert.Front
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"]==null)
+            Session["userid"] = 1;
+            if (Session["userid"]==null)
             {
                 HyperLink1.Visible = true;
                 string js = "<script>document.getElementById('user-agent').style.display='none'</script>";

@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Publish.master.cs" Inherits="Dessert.Front.Publish" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css" />
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>   
+    
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>发布教程</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body  style="background-color: #ffdff7;">
+    <form id="form1" runat="server">
+        <div>
+              
+        <!-- 导航放置处 -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                     <a class="navbar-brand" href="#">Dessert Bar</a>
+                </div>
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                      <!--甜品分类-->
+                      <li class="dropdown" >
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dessert-class">甜品分类<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">早餐</a></li>
+                        <li><a href="#">午餐</a></li>
+                        <li><a href="#">晚餐</a></li>
+                        <li><a href="#">下午茶</a></li>
+                        <li><a href="#">零食</a></li>
+                      </ul>
+                    </li>
+                      <!--甜品分类-->
+                      <li><a href="#">达人排行榜</a></li>
+                  </ul>
+                     <!--导航条右侧-->
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="login.aspx"><span class="glyphicon glyphicon-globe"></span>  登录</asp:HyperLink></li>
+                    <li class="dropdown" id="user-agent">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="user">
+                            <img src="../Data/Front_img/user.jpg" alt="Head Portrait" class="img-circle" style="width:30px" />
+                            个人中心
+                            <b class="caret"></b>
+                        </a>
+                        <!--个人中心下拉菜单-->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">发布教程</a></li>
+                            <li><a href="#">个人资料</a></li>
+                            <li><a href="#">Jasper Report</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">分离的链接</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">另一个分离的链接</a></li>
+                        </ul>
+                    </li>
+                      <li> </li>
+                  </ul>
+                     <!--导航条右侧-->
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+                    <div class="content" style="margin-top:50px">
+            <!-- 内容放置处 -->
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <img src="../Data/Front_img/icon.png" alt="甜點圖示"/>
+                <div><h1>Dessert Bar <small>Designed by 黄佳玲 危紫航 张嘉家😊</small></h1></div>
+            </footer>
+        </div>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+      <script>
+          AOS.init();
+          $('.collapse').collapse();
+          $('#dessert-class').mouseover(function () {
+              $(this).dropdown('toggle');
+          });
+          $('#dessert-class').mouseout(function () {
+              $(this).dropdown('toggle');
+          });
+          if ( $("#user").length > 0 ) {
+                     $('#user').mouseover(function () {
+                      $(this).dropdown('toggle');
+                  });
+                  $('#user').mouseout(function () {
+                      $(this).dropdown('toggle');
+                  });
+            }
+      </script>   
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
