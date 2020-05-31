@@ -41,6 +41,8 @@
                                 </td>
                             <td colspan="2">☽发布时间：<asp:Label ID="CourseTimeLabel" runat="server" Text='<%# Eval("CourseTime") %>' />
                             </td>
+                            <td>审核状态：<asp:Label ID="Label2" runat="server" Text='<%# Eval("CourseCheck") %>'></asp:Label>
+                            </td>
                         </tr>
                         <tr class="trHeight">
                             <td colspan="3" style="text-align: right">浏览（<asp:Label ID="CourseBrowseLabel" runat="server" Text='<%# Eval("CourseBrowse") %>' />
