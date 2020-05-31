@@ -100,9 +100,11 @@
     <Content Include="Data\Front_img\user.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Front\breakfast.aspx" />
+    <Content Include="Front\dinner.aspx" />
     <Content Include="Front\Index.aspx" />
     <Content Include="Front\index.html" />
     <Content Include="Front\login.aspx" />
+    <Content Include="Front\lunch.aspx" />
     <Content Include="Front\register.aspx" />
     <Content Include="Front\WebForm1.aspx" />
     <Content Include="Front\WebForm2.aspx" />
@@ -206,6 +208,13 @@
     <Compile Include="Front\breakfast.aspx.designer.cs">
       <DependentUpon>breakfast.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Front\dinner.aspx.cs">
+      <DependentUpon>dinner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\dinner.aspx.designer.cs">
+      <DependentUpon>dinner.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Front\Front.Master.cs">
       <DependentUpon>Front.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -233,6 +242,13 @@
     </Compile>
     <Compile Include="Front\LoginRes.Master.designer.cs">
       <DependentUpon>LoginRes.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Front\lunch.aspx.cs">
+      <DependentUpon>lunch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\lunch.aspx.designer.cs">
+      <DependentUpon>lunch.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front\Publish.Master.cs">
       <DependentUpon>Publish.Master</DependentUpon>
