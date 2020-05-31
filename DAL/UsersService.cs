@@ -10,14 +10,22 @@ namespace ThreeLayer.DAL
 {
     public class UsersService
     {
-        public bool IsUser(ThreeLayer.Model.Users myUser)
+        public int LoginUser(ThreeLayer.Model.Users myUser)
         {
             //判断是否为用户
-            string strSql = "select * from [Users] where UserTel='" + myUser.UserTel + "' and UserPwd='" + myUser.UserPwd + "'";
+            string strSql = "select UserId from [Users] where UserTel='" + myUser.UserTel + "' and UserPwd='" + myUser.UserPwd + "'";
             sqlHelper sqlHelper = new sqlHelper();
             DataSet dataSet = sqlHelper.ReadRecordDS(strSql);
-            if (dataSet.Tables[0].Rows.Count > 0) return true;
-            else return false;
+            if (dataSet.Tables[0].Rows.Count > 0)
+            {
+                //返回userid
+                int Userid = Convert.ToInt32(dataSet.Tables[0].Rows[0].ItemArray[0]);
+                return Userid;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public bool InserUser(ThreeLayer.Model.Users myUser)
@@ -44,7 +52,7 @@ namespace ThreeLayer.DAL
             DataSet dataSet = sqlHelper.ReadRecordDS(strsql);
             if (dataSet.Tables[0].Rows.Count > 0)
             {
-
+                
             }
 
         }

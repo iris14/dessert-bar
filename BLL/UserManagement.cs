@@ -8,17 +8,18 @@ namespace ThreeLayer.BLL
 {
     public class UserManagement
     {
-        public bool CheckUser(ThreeLayer.Model.Users myUser)
+        public int CheckUser(ThreeLayer.Model.Users myUser)
         {
             //判断model层的用户电话和密码是否和数据库中的匹配
             ThreeLayer.DAL.UsersService usersService = new ThreeLayer.DAL.UsersService();
-            if (usersService.IsUser(myUser) == true)
+            int userid = usersService.LoginUser(myUser);
+            if (userid!=0)
             {
-                return true;
+                return userid;
             }
             else
             {
-                return false;
+                return 0;
             }
         }
         public bool CheckRegister(ThreeLayer.Model.Users myUser)
