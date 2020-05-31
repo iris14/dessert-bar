@@ -102,6 +102,8 @@
     <Content Include="Front\WebForm1.aspx" />
     <Content Include="Front\WebForm2.aspx" />
     <Content Include="Front\registerSuc.aspx" />
+    <Content Include="Front\personalCenter.aspx" />
+    <Content Include="Front\personalMessage.aspx" />
     <Content Include="images\banner1.jpg" />
     <Content Include="images\banner2.jpg" />
     <Content Include="images\banner3.jpg" />
@@ -225,6 +227,20 @@
     </Compile>
     <Compile Include="Front\registerSuc.aspx.designer.cs">
       <DependentUpon>registerSuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\personalCenter.aspx.cs">
+      <DependentUpon>personalCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\personalCenter.aspx.designer.cs">
+      <DependentUpon>personalCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\personalMessage.aspx.cs">
+      <DependentUpon>personalMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\personalMessage.aspx.designer.cs">
+      <DependentUpon>personalMessage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
