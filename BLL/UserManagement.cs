@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace ThreeLayer.BLL
 {
@@ -34,6 +36,13 @@ namespace ThreeLayer.BLL
             {
                 return false;
             }
+        }
+
+        public DataSet showUserData(ThreeLayer.Model.Users users)
+        {
+            ThreeLayer.DAL.UsersService userData = new DAL.UsersService();
+            DataSet dataSet = userData.SelectPersonData(users);
+            return dataSet;
         }
     }
 }

@@ -14,5 +14,14 @@ namespace ThreeLayer.DAL
         {
             string strsql="select * from DessertSort where SortId="+dessertSort.SortName
         }*/
+        public DataSet selectUserPassCourse(ThreeLayer.Model.DessertCourse dessertCourse)
+        {
+            //返回用户发布的教程，以倒序来显示
+            string strsql = "select * from DessertCourse where UserId='" + dessertCourse.UserId + "' order by CourseTime desc ";
+            sqlHelper sqlHelper = new sqlHelper();
+            DataSet ds = new DataSet();
+            ds = sqlHelper.ReadRecordDS(strsql);
+            return ds;
+        }
     }
 }
