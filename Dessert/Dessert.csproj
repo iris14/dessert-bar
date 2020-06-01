@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin_Index.aspx" />
+    <Content Include="Admin\CourseDetail.aspx" />
     <Content Include="Admin\index.html" />
     <Content Include="Admin\UserArticle.aspx" />
     <Content Include="Admin\UserManage.aspx" />
@@ -165,12 +166,26 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Admin_detail.Master.cs">
+      <DependentUpon>Admin_detail.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_detail.Master.designer.cs">
+      <DependentUpon>Admin_detail.Master</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin_Index.aspx.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Admin_Index.aspx.designer.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CourseDetail.aspx.cs">
+      <DependentUpon>CourseDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CourseDetail.aspx.designer.cs">
+      <DependentUpon>CourseDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\UserArticle.aspx.cs">
       <DependentUpon>UserArticle.aspx</DependentUpon>
@@ -304,6 +319,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Front\LoginRes.Master" />
     <Content Include="Front\Publish.Master" />
+    <Content Include="Admin\Admin_detail.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
