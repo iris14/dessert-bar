@@ -20,23 +20,7 @@ namespace ThreeLayer.DAL
             {
                 //返回userid
                 int Userid = Convert.ToInt32(dataSet.Tables[0].Rows[0].ItemArray[0]);
-                
-                
-                for(int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
-                {
-                    //遍历行
-                    for(int j = 0; j < dataSet.Tables[0].Columns.Count; j++)
-                    {
-                        //某行某列的一个属性
-                        //dataSet.Tables[0].Rows[i].ItemArray[j].ToString();
-                        //dataSet.Tables[0].Rows[i]["列名"].ToString();
-                        //dataSet.Tables[0].Rows[i][j].ToString();
-
-                    }
-                }
-
-
-                    return Userid;
+                return Userid;
 
             }
             else
@@ -82,6 +66,15 @@ namespace ThreeLayer.DAL
         {
             //调取用户信息
             string strsql = "select * from [Users] where UserId='" + users.UserId + "'";
+            sqlHelper sqlHelper = new sqlHelper();
+            DataSet ds = sqlHelper.ReadRecordDS(strsql);
+            return ds;
+        }
+
+        public DataSet SelectAllData()
+        {
+            //调取用户信息
+            string strsql = "select * from [Users]";
             sqlHelper sqlHelper = new sqlHelper();
             DataSet ds = sqlHelper.ReadRecordDS(strsql);
             return ds;

@@ -34,3 +34,12 @@ D:\dessert\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\dessert\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\dessert\DAL\obj\Debug\DAL.dll
 D:\dessert\DAL\obj\Debug\DAL.pdb
+E:\ASP\TeamGit\DAL\bin\Debug\DAL.dll
+E:\ASP\TeamGit\DAL\bin\Debug\DAL.pdb
+E:\ASP\TeamGit\DAL\bin\Debug\Model.dll
+E:\ASP\TeamGit\DAL\bin\Debug\Model.pdb
+E:\ASP\TeamGit\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\ASP\TeamGit\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\ASP\TeamGit\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\ASP\TeamGit\DAL\obj\Debug\DAL.dll
+E:\ASP\TeamGit\DAL\obj\Debug\DAL.pdb

@@ -42,3 +42,14 @@ D:\dessert\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\dessert\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\dessert\BLL\obj\Debug\BLL.dll
 D:\dessert\BLL\obj\Debug\BLL.pdb
+E:\ASP\TeamGit\BLL\bin\Debug\BLL.dll
+E:\ASP\TeamGit\BLL\bin\Debug\BLL.pdb
+E:\ASP\TeamGit\BLL\bin\Debug\DAL.dll
+E:\ASP\TeamGit\BLL\bin\Debug\Model.dll
+E:\ASP\TeamGit\BLL\bin\Debug\DAL.pdb
+E:\ASP\TeamGit\BLL\bin\Debug\Model.pdb
+E:\ASP\TeamGit\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+E:\ASP\TeamGit\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\ASP\TeamGit\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\ASP\TeamGit\BLL\obj\Debug\BLL.dll
+E:\ASP\TeamGit\BLL\obj\Debug\BLL.pdb

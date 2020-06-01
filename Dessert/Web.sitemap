@@ -2,15 +2,19 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="Admin/Admin_Index.aspx" title="🧁后台管理首页"  description="后台管理首页">
     <siteMapNode url="" title="🧁用户管理"  description="用户管理">
-      <siteMapNode url="" title="普通用户信息管理"  description="普通用户信息管理" />
-      <siteMapNode url="" title="管理员信息管理"  description="管理员信息管理" />
+      <siteMapNode url="Admin/UserManage.aspx" title="普通用户信息管理"  description="普通用户信息管理" />
+      <siteMapNode url="Admin/AdminManage.aspx" title="管理员信息管理"  description="管理员信息管理" />
     </siteMapNode>
 
-    <siteMapNode url="" title="🧁教程管理"  description="教程管理" >
-      <siteMapNode url="" title="审核用户教程"  description="审核用户教程" />
-      <siteMapNode url="" title="未审核通过教程管理"  description="未审核通过教程管理" />
-      <siteMapNode url="" title="已审核通过教程管理"  description="已审核通过教程管理" />
-      <siteMapNode url="" title="官方教程管理"  description="官方教程管理" />
+    <siteMapNode url="" title="🧁审核管理"  description="教程管理" >
+      <siteMapNode url="" title="审核用户教程"  description="审核用户教程" >
+        <siteMapNode url="" title="待审核通过教程管理"  description="未审核通过教程管理" />
+        <siteMapNode url="" title="已审核通过教程管理"  description="已审核通过教程管理" />
+        <siteMapNode url="" title="审核不通过教程管理"  description="审核不通过教程管理" />
+      </siteMapNode>
+      <siteMapNode url="Admin/AdminCourse.aspx" title="🧁官方教程管理"  description="官方教程管理" />
+      <siteMapNode url="Admin/NiceCourse.aspx" title="🧁精品教程管理"  description="精品教程管理" />
+      <siteMapNode url="" title="🧁搭配甜品管理"  description="搭配甜品管理" />
     </siteMapNode>
   </siteMapNode>
 </siteMap>
