@@ -3,13 +3,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <style type="text/css">
+        .divborder{
+            border:1px solid #000
+        }
+    </style>
+
     <div>
         <div class="breakfast">
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [DessertCourse]"></asp:SqlDataSource>
             <p>
                 <asp:Label ID="Label1" runat="server" Text="早餐" Font-Size="XX-Large" ForeColor="#33CC33"></asp:Label>
             </p>
-            <div>
+            <div class="divborder">
                 <div align="center">
                     <p>
                     <asp:Label ID="Label2" runat="server" Text="☀美味" Font-Size="X-Large" ForeColor="#99CCFF"></asp:Label>

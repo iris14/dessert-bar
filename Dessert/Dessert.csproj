@@ -100,6 +100,8 @@
     <Content Include="Data\Front_img\user.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Front\breakfast.aspx" />
+    <Content Include="Front\dessertCourse.aspx" />
+    <Content Include="Front\dessertCourseTest.aspx" />
     <Content Include="Front\dinner.aspx" />
     <Content Include="Front\Index.aspx" />
     <Content Include="Front\index.html" />
@@ -207,6 +209,20 @@
     </Compile>
     <Compile Include="Front\breakfast.aspx.designer.cs">
       <DependentUpon>breakfast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\dessertCourse.aspx.cs">
+      <DependentUpon>dessertCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\dessertCourse.aspx.designer.cs">
+      <DependentUpon>dessertCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\dessertCourseTest.aspx.cs">
+      <DependentUpon>dessertCourseTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\dessertCourseTest.aspx.designer.cs">
+      <DependentUpon>dessertCourseTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front\dinner.aspx.cs">
       <DependentUpon>dinner.aspx</DependentUpon>
