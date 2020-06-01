@@ -9,7 +9,7 @@
             <p>
                 <asp:Label ID="Label1" runat="server" Text="早餐" Font-Size="XX-Large" ForeColor="#33CC33"></asp:Label>
             </p>
-            <div style="border-style: double">
+            <div>
                 <div align="center">
                     <p>
                     <asp:Label ID="Label2" runat="server" Text="☀美味" Font-Size="X-Large" ForeColor="#99CCFF"></asp:Label>
