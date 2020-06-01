@@ -11,7 +11,7 @@ namespace Dessert.DynamicData.FieldTemplates
 {
 
 
-    public partial class step1_EditField
+    public partial class step_EditField
     {
 
         protected System.Web.UI.WebControls.TextBox TextBox1;

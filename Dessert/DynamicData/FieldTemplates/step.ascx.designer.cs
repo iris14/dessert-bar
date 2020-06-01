@@ -10,7 +10,7 @@
 namespace Dessert.DynamicData.FieldTemplates {
     
     
-    public partial class step1 {
+    public partial class step {
         
         /// <summary>
         /// Literal1 控件。

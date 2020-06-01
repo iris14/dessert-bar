@@ -15,7 +15,7 @@ using System.Web.DynamicData;
 
 namespace Dessert.DynamicData.FieldTemplates
 {
-    public partial class step1 : System.Web.DynamicData.FieldTemplateUserControl
+    public partial class step : System.Web.DynamicData.FieldTemplateUserControl
     {
         public override Control DataControl
         {

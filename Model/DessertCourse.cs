@@ -17,7 +17,7 @@ namespace ThreeLayer.Model
         public int CourseComment { set; get; }
         public string CourseCover { set; get; }
         public int CourseBrowse { set; get; }
-        public int CourseCheck { set; get; }
+        public string CourseCheck { set; get; }
         public int CourseUserAdmin { set; get; }
         public int SortId { set; get; }
         public int LabelId { set; get; }

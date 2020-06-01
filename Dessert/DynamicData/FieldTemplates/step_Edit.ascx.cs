@@ -15,7 +15,7 @@ using System.Web.DynamicData;
 
 namespace Dessert.DynamicData.FieldTemplates
 {
-    public partial class step1_EditField : System.Web.DynamicData.FieldTemplateUserControl
+    public partial class step_EditField : System.Web.DynamicData.FieldTemplateUserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

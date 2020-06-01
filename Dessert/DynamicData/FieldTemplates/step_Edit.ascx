@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" CodeBehind="step_Edit.ascx.cs" Inherits="Dessert.DynamicData.FieldTemplates.step1_EditField" %>
+﻿<%@ Control Language="C#" CodeBehind="step_Edit.ascx.cs" Inherits="Dessert.DynamicData.FieldTemplates.step_EditField" %>
 
 <asp:TextBox ID="TextBox1" runat="server" Text='<%# FieldValueEditString %>'></asp:TextBox>
 
