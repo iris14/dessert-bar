@@ -95,6 +95,8 @@
     <Content Include="Data\Front_img\login-image-3.png" />
     <Content Include="Data\Front_img\user.jpg" />
     <Content Include="Data\Front_img\user.png" />
+    <Content Include="DynamicData\FieldTemplates\step.ascx" />
+    <Content Include="DynamicData\FieldTemplates\step_Edit.ascx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Front\breakfast.aspx" />
     <Content Include="Front\Index.aspx" />
@@ -167,6 +169,20 @@
     </Compile>
     <Compile Include="Admin\Admin_Index.aspx.designer.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\step.ascx.cs">
+      <DependentUpon>step.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\step.ascx.designer.cs">
+      <DependentUpon>step.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\step_Edit.ascx.cs">
+      <DependentUpon>step_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\step_Edit.ascx.designer.cs">
+      <DependentUpon>step_Edit.ascx</DependentUpon>
     </Compile>
     <Compile Include="Front\breakfast.aspx.cs">
       <DependentUpon>breakfast.aspx</DependentUpon>
