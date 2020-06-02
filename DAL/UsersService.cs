@@ -32,7 +32,7 @@ namespace ThreeLayer.DAL
         public bool InserUser(ThreeLayer.Model.Users myUser)
         {
             //插入用户信息
-            string strSql = "insert into [Users](UserName,UserTel,UserPwd,UserGender,UserCard,UserTime) values('" + myUser.UserName + "','" + myUser.UserTel + "','" + myUser.UserPwd + "','女','" + myUser.UserCard + "','" + myUser.UserTime + "')";
+            string strSql = "insert into [Users](UserName,UserTel,UserPwd,UserGender,UserCard,UserTime,UserIntegration) values('" + myUser.UserName + "','" + myUser.UserTel + "','" + myUser.UserPwd + "','女','" + myUser.UserCard + "','" + myUser.UserTime + "','0')";
             
             sqlHelper sqlHelper = new sqlHelper();
             int status = sqlHelper.ModifyRecord(strSql);

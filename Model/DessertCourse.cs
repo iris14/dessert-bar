@@ -20,6 +20,7 @@ namespace ThreeLayer.Model
         public string CourseCheck { set; get; }
         public int CourseUserAdmin { set; get; }
         public int SortId { set; get; }
-        public int LabelId { set; get; }
+        public int CourseQuality { set; get; }
+        public int MatchId { set; get; }
     }
 }

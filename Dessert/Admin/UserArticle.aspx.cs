@@ -44,5 +44,10 @@ namespace Dessert.Admin
         {
             Response.Redirect("UserManage.aspx");
         }
+
+        protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

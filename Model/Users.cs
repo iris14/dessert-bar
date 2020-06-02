@@ -16,5 +16,6 @@ namespace ThreeLayer.Model
         public string UserEmail { set; get; }
         public string UserCard { set; get; }
         public DateTime UserTime { set; get; }
+        public int UserIntegration { set; get; }
     }
 }
