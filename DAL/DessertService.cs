@@ -48,7 +48,7 @@ namespace ThreeLayer.DAL
             dessertCourse.CourseUserAdmin = 0;
             dessertCourse.CourseQuality = 0;
             dessertCourse.CourseCheck = "未审核";
-            string strsql= "insert into DeesertCourse (UserId,CourseTitle,CourseTime,CourseTag,CourseComment,CourseCover,CourseBrowse,CourseCheck,CourseUserAdmin,SordId,CourseQuality) values ('"+dessertCourse.UserId+"','"+dessertCourse.CourseTitle+"','"+dessertCourse.CourseTime+"','"+dessertCourse.CourseTag+"','"+dessertCourse.CourseTag+"','"+dessertCourse.CourseComment+"','"+dessertCourse.CourseCover+"','"+dessertCourse.CourseBrowse+"','"+dessertCourse.CourseCheck+"','"+dessertCourse.CourseUserAdmin+"','"+dessertCourse.SortId+"','"+dessertCourse.CourseQuality+"')";
+            string strsql= "insert into DeesertCourse (UserId,CourseTitle,CourseTime,CourseTag,CourseComment,CourseCover,CourseBrowse,CourseCheck,CourseUserAdmin,CourseQuality) values ('"+dessertCourse.UserId+"','"+dessertCourse.CourseTitle+"','"+dessertCourse.CourseTime+"','"+dessertCourse.CourseTag+"','"+dessertCourse.CourseTag+"','"+dessertCourse.CourseComment+"','"+dessertCourse.CourseCover+"','"+dessertCourse.CourseBrowse+"','"+dessertCourse.CourseCheck+"','"+dessertCourse.CourseUserAdmin+"','"+dessertCourse.CourseQuality+"')";
             sqlHelper sqlHelper = new sqlHelper();
             if (sqlHelper.ModifyRecord(strsql)==1)
             {
