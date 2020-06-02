@@ -97,7 +97,7 @@
                 </tr>
             </table>
             <div>
-                <asp:Button ID="Button2" runat="server" Text="确认发布" CssClass="submitBtn"/></div>
+                <asp:Button ID="Button2" runat="server" Text="确认发布" CssClass="submitBtn" OnClick="Button2_Click"/></div>
         </div>
     </div>
 

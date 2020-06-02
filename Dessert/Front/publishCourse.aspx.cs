@@ -31,18 +31,21 @@ namespace Dessert.Front
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            //为增加步骤button添加click事件
-            Button1.Click += new EventHandler(Button1_Click);
             for (int i = 1; i <= Count; i++)
             {
                 LoadStep(i);
             }
-
+            //为增加步骤button添加click事件
+            //Button1.Click += new EventHandler(Button1_Click);
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
             Count++;
             LoadStep(Count);
+        }
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
