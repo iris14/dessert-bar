@@ -42,12 +42,20 @@ namespace ThreeLayer.BLL
         }
 
         public int InsertBLLImage(ThreeLayer.Model.DessertImage dessertImage)
-        {
+        {   
+            //插入用户课程第二步，添加教程步骤
             ThreeLayer.DAL.DessertService dessertService = new ThreeLayer.DAL.DessertService();
             int Status = dessertService.InsertImage(dessertImage);
             return Status;
         }
-        
+
+        public int InsertBLLCourseLabel(ThreeLayer.Model.CourseLable courseLable)
+        {
+            ThreeLayer.DAL.DessertService dessertService = new ThreeLayer.DAL.DessertService();
+            int Status = dessertService.InsertCourseLabel(courseLable);
+            return Status;
+
+
         }
     }
 
