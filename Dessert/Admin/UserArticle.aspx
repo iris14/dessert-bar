@@ -9,7 +9,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;
             <div class="row">
                 <div style="margin:auto">
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" DataKeyNames="CourseId" ForeColor="Black" GridLines="None" Height="29px" Width="1252px">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" DataKeyNames="CourseId" ForeColor="Black" GridLines="None" Height="29px" Width="1252px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1">
                         <AlternatingRowStyle BackColor="PaleGoldenrod" />
                         <Columns>
                             <asp:BoundField DataField="CourseId" HeaderText="序号" InsertVisible="False" ReadOnly="True" SortExpression="CourseId" />
@@ -33,7 +33,7 @@
                                     <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("CourseId") %>'></asp:TextBox>
                                 </EditItemTemplate>
                                 <ItemTemplate>
-                                    <asp:HyperLink ID="HyperLink2" runat="server">HyperLink</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# Eval("CourseId","CourseDetail.aspx?CourseId={0}") %>'>文章详情</asp:HyperLink>
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
