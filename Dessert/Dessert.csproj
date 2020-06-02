@@ -68,13 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin_Index.aspx" />
-    <Content Include="Admin\CourseDetail.aspx" />
     <Content Include="Admin\index.html" />
-    <Content Include="Admin\UserArticle.aspx" />
-    <Content Include="Admin\UserManage.aspx" />
-    <Content Include="App_Data\DessertDataBase.mdf" />
-    <Content Include="App_Data\DessertDataBase_log.ldf">
-      <DependentUpon>DessertDataBase.mdf</DependentUpon>
+    <Content Include="App_Data\DessertDataBase .mdf" />
+    <Content Include="App_Data\DessertDataBase _log.ldf">
+      <DependentUpon>DessertDataBase .mdf</DependentUpon>
     </Content>
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -98,6 +95,8 @@
     <Content Include="Data\Front_img\login-image-3.png" />
     <Content Include="Data\Front_img\user.jpg" />
     <Content Include="Data\Front_img\user.png" />
+    <Content Include="DynamicData\FieldTemplates\step.ascx" />
+    <Content Include="DynamicData\FieldTemplates\step_Edit.ascx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Front\breakfast.aspx" />
     <Content Include="Front\dessertCourse.aspx" />
@@ -168,13 +167,6 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_detail.Master.cs">
-      <DependentUpon>Admin_detail.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Admin_detail.Master.designer.cs">
-      <DependentUpon>Admin_detail.Master</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Admin_Index.aspx.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,26 +174,19 @@
     <Compile Include="Admin\Admin_Index.aspx.designer.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\CourseDetail.aspx.cs">
-      <DependentUpon>CourseDetail.aspx</DependentUpon>
+    <Compile Include="DynamicData\FieldTemplates\step.ascx.cs">
+      <DependentUpon>step.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\CourseDetail.aspx.designer.cs">
-      <DependentUpon>CourseDetail.aspx</DependentUpon>
+    <Compile Include="DynamicData\FieldTemplates\step.ascx.designer.cs">
+      <DependentUpon>step.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\UserArticle.aspx.cs">
-      <DependentUpon>UserArticle.aspx</DependentUpon>
+    <Compile Include="DynamicData\FieldTemplates\step_Edit.ascx.cs">
+      <DependentUpon>step_Edit.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\UserArticle.aspx.designer.cs">
-      <DependentUpon>UserArticle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\UserManage.aspx.cs">
-      <DependentUpon>UserManage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\UserManage.aspx.designer.cs">
-      <DependentUpon>UserManage.aspx</DependentUpon>
+    <Compile Include="DynamicData\FieldTemplates\step_Edit.ascx.designer.cs">
+      <DependentUpon>step_Edit.ascx</DependentUpon>
     </Compile>
     <Compile Include="Front\breakfast.aspx.cs">
       <DependentUpon>breakfast.aspx</DependentUpon>
@@ -335,7 +320,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Front\LoginRes.Master" />
     <Content Include="Front\Publish.Master" />
-    <Content Include="Admin\Admin_detail.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
