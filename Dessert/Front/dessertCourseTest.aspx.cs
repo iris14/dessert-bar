@@ -11,7 +11,10 @@ namespace Dessert.Front
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Label label = new Label();
+            //label.ID=""
+            //label.Text=""
+            //imga
         }
 
         protected void Button1_Click(object sender, EventArgs e)
