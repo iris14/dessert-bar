@@ -67,9 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminManage.aspx" />
     <Content Include="Admin\Admin_Index.aspx" />
     <Content Include="Admin\CourseDetail.aspx" />
     <Content Include="Admin\index.html" />
+    <Content Include="Admin\PassCourse.aspx" />
     <Content Include="Admin\UserArticle.aspx" />
     <Content Include="Admin\UserManage.aspx" />
     <Content Include="App_Data\DessertDataBase.mdf" />
@@ -166,6 +168,13 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminManage.aspx.cs">
+      <DependentUpon>AdminManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminManage.aspx.designer.cs">
+      <DependentUpon>AdminManage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin_detail.Master.cs">
       <DependentUpon>Admin_detail.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -186,6 +195,13 @@
     </Compile>
     <Compile Include="Admin\CourseDetail.aspx.designer.cs">
       <DependentUpon>CourseDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PassCourse.aspx.cs">
+      <DependentUpon>PassCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PassCourse.aspx.designer.cs">
+      <DependentUpon>PassCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\UserArticle.aspx.cs">
       <DependentUpon>UserArticle.aspx</DependentUpon>
