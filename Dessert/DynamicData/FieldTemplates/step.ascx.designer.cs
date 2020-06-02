@@ -7,27 +7,36 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Dessert.Admin {
+namespace Dessert.DynamicData.FieldTemplates {
     
     
-    public partial class UserManage {
+    public partial class step {
         
         /// <summary>
-        /// SqlDataSource1 控件。
+        /// Literal1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Literal Literal1;
         
         /// <summary>
-        /// GridView1 控件。
+        /// TextBox1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
+        /// FileUpload1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
     }
 }

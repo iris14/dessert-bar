@@ -7,10 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Dessert.Admin {
+namespace Dessert.Front {
     
     
-    public partial class UserManage {
+    public partial class dessertCourse {
         
         /// <summary>
         /// SqlDataSource1 控件。
@@ -22,12 +22,12 @@ namespace Dessert.Admin {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// GridView1 控件。
+        /// ListView1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.ListView ListView1;
     }
 }

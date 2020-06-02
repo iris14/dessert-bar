@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Dessert.Admin
+namespace Dessert.Front
 {
-    public partial class Admin_detail : System.Web.UI.MasterPage
+    public partial class dessertCourse : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

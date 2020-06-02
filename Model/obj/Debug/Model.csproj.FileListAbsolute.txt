@@ -16,3 +16,9 @@ F:\asp\实验作业\Dessert\Model\obj\Debug\Model.csprojAssemblyReference.cache
 F:\asp\实验作业\Dessert\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 F:\asp\实验作业\Dessert\Model\obj\Debug\Model.dll
 F:\asp\实验作业\Dessert\Model\obj\Debug\Model.pdb
+E:\ASP\TeamGit\Model\bin\Debug\Model.dll
+E:\ASP\TeamGit\Model\bin\Debug\Model.pdb
+E:\ASP\TeamGit\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\ASP\TeamGit\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\ASP\TeamGit\Model\obj\Debug\Model.dll
+E:\ASP\TeamGit\Model\obj\Debug\Model.pdb
