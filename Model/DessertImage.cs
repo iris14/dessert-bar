@@ -11,5 +11,7 @@ namespace ThreeLayer.Model
         public int ImageId { set; get; }
         public int CourseId { set; get; }
         public string ImageFile { set; get; }
+        public string CourseDetail { set; get; }
+        public int DessertStep { set; get; }
     }
 }

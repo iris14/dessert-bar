@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Admin.cs" />
     <Compile Include="Comment.cs" />
+    <Compile Include="CourseLable.cs" />
     <Compile Include="DessertCourse.cs" />
     <Compile Include="DessertFood.cs" />
     <Compile Include="DessertImage.cs" />

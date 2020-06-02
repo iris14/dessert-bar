@@ -32,6 +32,22 @@ namespace ThreeLayer.BLL
             DataSet dataSet = dessertService.selectUserOneData(dessert);
             return dataSet;
         }
+
+        public int InsertBLLUserCourse(ThreeLayer.Model.DessertCourse dessertCourse, ThreeLayer.Model.DessertFood dessertFood)
+        {
+            //插入用户课程第一步
+            ThreeLayer.DAL.DessertService dessertService = new ThreeLayer.DAL.DessertService();
+            int Status = dessertService.InsertUserCourse(dessertCourse, dessertFood);
+            return Status;
+        }
+
+        public int InsertBLLImage(ThreeLayer.Model.DessertImage dessertImage)
+        {
+            ThreeLayer.DAL.DessertService dessertService = new ThreeLayer.DAL.DessertService();
+            int Status = dessertService.InsertImage(dessertImage);
+            return Status;
+        }
+        
         }
     }
 
