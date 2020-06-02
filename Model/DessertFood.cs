@@ -11,5 +11,6 @@ namespace ThreeLayer.Model
         public int FoodId { set; get; }
         public int CourseId { set; get; }
         public string FoodName { set; get; }
+        public int Calorie { set; get; }
     }
 }

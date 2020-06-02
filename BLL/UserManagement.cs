@@ -52,5 +52,11 @@ namespace ThreeLayer.BLL
             DataSet dataSet = userData.SelectAllData();
             return dataSet;
         }
+        public int UpdateBllUserDetail(ThreeLayer.Model.Users myUser)
+        {
+            ThreeLayer.DAL.UsersService users = new DAL.UsersService();
+            int status = users.UpdateUserDetail(myUser);
+            return status;
+        }
     }
 }

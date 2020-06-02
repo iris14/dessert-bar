@@ -9,8 +9,6 @@ namespace ThreeLayer.Model
     public class DessertSort
     {
         public int SortId { set; get; }
-        public int CourseId { set; get; }
-        public int LableId { set; get; }
         public string SortName { set; get; }
     }
 }

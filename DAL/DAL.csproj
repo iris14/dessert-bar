@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckService.cs" />
     <Compile Include="DessertService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlHelper.cs" />
