@@ -1,46 +1,33 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="CourseCheck.aspx.cs" Inherits="Dessert.Admin.CourseCheck" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style5 {
-            margin-bottom: 0;
-        }
-    </style>
-</asp:Content>
+    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Panel ID="Panel1" runat="server">
-        <asp:Label ID="Label1" runat="server" Text="标题："></asp:Label>
-        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-        <br />
-        <asp:Label ID="Label3" runat="server" Text="食材："></asp:Label>
-        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
-        <br />
-        <asp:Label ID="Label5" runat="server" Text="作者："></asp:Label>
-        <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
-        <br />
-        <asp:Label ID="Label7" runat="server" Text="分类"></asp:Label>
-        <asp:DropDownList ID="DropDownList1" runat="server">
-        </asp:DropDownList>
-        <br />
-        <asp:Label ID="Label8" runat="server" Text="标签："></asp:Label>
-        <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
-        <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
-        <br />
-        <asp:Label ID="Label11" runat="server" Text="热量填写："></asp:Label>
-        <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style5"></asp:TextBox>
-        <br />
-        <asp:HyperLink ID="HyperLink1" runat="server">详细教程</asp:HyperLink>
-        <br />
-        <asp:Label ID="Label12" runat="server" Text="是否通过审核："></asp:Label>
-        <asp:RadioButton ID="Checked1" runat="server" />
-        <asp:RadioButton ID="Unchecked1" runat="server" />
-        <br />
-        <asp:Label ID="Label13" runat="server" Text="是否设为精品："></asp:Label>
-        <asp:RadioButton ID="Quatity1" runat="server" />
-        <br />
-        <asp:Button ID="Button1" runat="server" Text="审核完成" />
-    </asp:Panel>
-    <br />
-    <br />
-    <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+    
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <h2>未审核用户教程管理</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"  Height="198px" Width="1403px" CssClass="table table-bordered bg-warning">
+            <Columns>
+                <asp:BoundField DataField="CourseId" HeaderText="序号" InsertVisible="False" ReadOnly="True" SortExpression="CourseId" />
+                <asp:BoundField DataField="CourseCheck" HeaderText="审核状态" SortExpression="CourseCheck" />
+                <asp:BoundField DataField="UserName" HeaderText="上传用户名" SortExpression="UserName" />
+                <asp:BoundField DataField="CourseTitle" HeaderText="教程名" SortExpression="CourseTitle" />
+                <asp:BoundField DataField="UserIntegration" HeaderText="用户积分" SortExpression="UserIntegration" />
+                <asp:TemplateField ConvertEmptyStringToNull="False" HeaderText="审核" SortExpression="CourseId">
+                    <EditItemTemplate>
+                        <asp:DynamicControl ID="DynamicControl1" runat="server" DataField="CourseId" Mode="Edit" />
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("CourseId","UncheckedEdit.aspx?CourseId={0}") %>' CssClass="btn btn-default">审核</asp:HyperLink>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
+        </div>
+    </div>
     <br />
 </asp:Content>
