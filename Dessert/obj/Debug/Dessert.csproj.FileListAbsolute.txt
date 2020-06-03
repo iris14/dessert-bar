@@ -476,3 +476,7 @@ E:\ASP\TeamGit\Dessert\obj\Debug\Dessert.csproj.CoreCompileInputs.cache
 E:\ASP\TeamGit\Dessert\obj\Debug\Dessert.csproj.CopyComplete
 E:\ASP\TeamGit\Dessert\obj\Debug\Dessert.dll
 E:\ASP\TeamGit\Dessert\obj\Debug\Dessert.pdb
+F:\asp\Dessert\Dessert\Dessert\obj\Debug\Dessert.csprojAssemblyReference.cache
+F:\asp\Dessert\Dessert\Dessert\obj\Debug\Dessert.csproj.CoreCompileInputs.cache
+F:\asp\Dessert\Dessert\Dessert\obj\Debug\Dessert.dll
+F:\asp\Dessert\Dessert\Dessert\obj\Debug\Dessert.pdb
