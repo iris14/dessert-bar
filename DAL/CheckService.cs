@@ -54,5 +54,12 @@ namespace ThreeLayer.DAL
                 return 0;
             }
         }
+        public DataSet selectUncheckedCourseDetail(Model.DessertCourse dessertCourse)
+        {
+            string strsql = "select * from [Checked] where CourseId='"+dessertCourse.CourseId+"'";
+            sqlHelper sqlHelper = new sqlHelper();
+            DataSet ds = sqlHelper.ReadRecordDS(strsql);
+            return ds;
+        }
     }
 }

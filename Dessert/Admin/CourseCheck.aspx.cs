@@ -18,23 +18,15 @@ namespace Dessert.Admin
             DataSet ds = check.showUncheckedCourse();
             if (ds.Tables[0].Rows.Count > 0)
             {
-                /*for(int i=0;i< ds.Tables[0].Rows.Count; i++)
-                {
-                    Panel panel = new Panel();
-
-                }*/
-                Response.Write("lailalaodi");
-                Panel panel = new Panel();
-                panel.ID = "laodidi";
-                Label label = new Label();
-                label.ID = string.Format("Lable_{0}",LabelCount+1);
-                label.Text = "标题";
-                panel.Controls.Add(label);
-                label.ID= string.Format("Lable_{0}", LabelCount + 1);
-                label.Text = "食材";
-                panel.Controls.Add(label);
+                GridView1.DataSource = ds.Tables[0];
+                GridView1.DataBind();
             }
             
+        }
+
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
         }
     }
 }

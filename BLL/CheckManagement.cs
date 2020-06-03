@@ -22,5 +22,11 @@ namespace ThreeLayer.BLL
             int status = checkService.UpdateUncheckedCourse(dessertCourse, dessertFood, users);
             return status;
         }
+        public DataSet showUncheckedCourseDetail(Model.DessertCourse dessertCourse)
+        {
+            DAL.CheckService checkService = new DAL.CheckService();
+            DataSet ds = checkService.selectUncheckedCourseDetail(dessertCourse);
+            return ds;
+        }
     }
 }

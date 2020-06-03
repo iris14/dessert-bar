@@ -74,6 +74,7 @@
     <Content Include="Admin\index.html" />
     <Content Include="Admin\PassCourse.aspx" />
     <Content Include="Admin\Uncheck.aspx" />
+    <Content Include="Admin\UncheckedEdit.aspx" />
     <Content Include="Admin\UserArticle.aspx" />
     <Content Include="Admin\UserManage.aspx" />
     <Content Include="App_Data\DessertDataBase.mdf" />
@@ -493,6 +494,13 @@
     </Compile>
     <Compile Include="Admin\Uncheck.aspx.designer.cs">
       <DependentUpon>Uncheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UncheckedEdit.aspx.cs">
+      <DependentUpon>UncheckedEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UncheckedEdit.aspx.designer.cs">
+      <DependentUpon>UncheckedEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\UserArticle.aspx.cs">
       <DependentUpon>UserArticle.aspx</DependentUpon>
