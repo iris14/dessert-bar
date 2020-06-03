@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Front/Publish.Master" AutoEventWireup="true" CodeBehind="publishCourse.aspx.cs" Inherits="Dessert.Front.WebForm8" %>
-
+<%@ Reference Control="step.ascx" %><%--引用控件--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .pubContent {
@@ -47,6 +47,10 @@
             cursor: pointer;
             height:50px;
         }
+        .auto-style1 {
+            height: 50px;
+            width: 375px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -64,36 +68,60 @@
         <div class="courseContent">
             <table class="nav-justified">
                 <tr>
-                    <td style="height: 50px;"><span class="title">教程标题：</span></td>
+                    <td class="auto-style1"><span class="title">教程标题：</span></td>
                 </tr>
                 <tr>
-                    <td style="height: 50px;"><asp:TextBox ID="TextBox1" runat="server" CssClass="txtStyle"></asp:TextBox></td>
+                    <td class="auto-style1"><asp:TextBox ID="TextBox1" runat="server" CssClass="txtStyle"></asp:TextBox></td>
                 </tr>
-                <tr>
+                <%-- <tr>
                     <td style="height: 50px;"><span class="title">甜品类别：</span></td>
                 </tr>
-                <tr>
+               <tr>
                     <td style="height: 50px;">
                         <asp:DropDownList ID="DropDownList1" runat="server" Height="30px" Width="155px" DataSourceID="SqlDataSource1" DataTextField="SortName" DataValueField="SortId"></asp:DropDownList>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [DessertSort]"></asp:SqlDataSource>
                     </td>
+                </tr>--%>
+                <tr>
+                    <td class="auto-style1"><span class="title">甜品标签：</span></td>
                 </tr>
                 <tr>
-                    <td style="height: 50px;"><span class="title">甜品标签：</span></td>
-                </tr>
-                <tr>
-                    <td style="height: 50px;">
-                        <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="LableTitle" DataValueField="LableId" RepeatColumns="5" RepeatDirection="Horizontal" Width="300px">
-                        </asp:CheckBoxList>
-                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [DessertLable]"></asp:SqlDataSource>
+                    <td class="auto-style1">
+                        蛋白质：<asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal">
+                            <asp:ListItem Value="1">高蛋白</asp:ListItem>
+                            <asp:ListItem Value="2">低蛋白</asp:ListItem>
+                        </asp:RadioButtonList>
                     </td>
                 </tr>
                 <tr>
-                    <td style="height: 50px;"><span class="title">主要食材：</span></td>
+                    <td class="auto-style1">
+                        脂肪：<asp:RadioButtonList ID="RadioButtonList2" runat="server" RepeatDirection="Horizontal">
+                            <asp:ListItem Value="3">高脂</asp:ListItem>
+                            <asp:ListItem Value="4">低脂</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </td>
                 </tr>
                 <tr>
-                    <td style="height: 50px;">
+                    <td class="auto-style1">
+                        碳水化合物：<asp:RadioButtonList ID="RadioButtonList3" runat="server" RepeatDirection="Horizontal">
+                            <asp:ListItem Value="5">高碳水</asp:ListItem>
+                            <asp:ListItem Value="6">低碳水</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1"><span class="title">主要食材：</span></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">
                         <asp:TextBox ID="TextBox2" runat="server" Height="115px" TextMode="MultiLine" Width="300px"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1"><span class="title">教程封面：</span></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">
+                        <asp:FileUpload ID="FileUpload1" runat="server" /></td>
                 </tr>
             </table>
             <div>

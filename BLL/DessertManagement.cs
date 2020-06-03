@@ -42,7 +42,7 @@ namespace ThreeLayer.BLL
         }
 
         public int InsertBLLImage(ThreeLayer.Model.DessertImage dessertImage)
-        {   
+        {
             //插入用户课程第二步，添加教程步骤
             ThreeLayer.DAL.DessertService dessertService = new ThreeLayer.DAL.DessertService();
             int Status = dessertService.InsertImage(dessertImage);
@@ -58,5 +58,6 @@ namespace ThreeLayer.BLL
 
         }
     }
+}
 
 
