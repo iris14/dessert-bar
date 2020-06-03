@@ -22,3 +22,9 @@ E:\ASP\TeamGit\Model\obj\Debug\Model.csprojAssemblyReference.cache
 E:\ASP\TeamGit\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 E:\ASP\TeamGit\Model\obj\Debug\Model.dll
 E:\ASP\TeamGit\Model\obj\Debug\Model.pdb
+D:\dessert\Model\bin\Debug\Model.dll
+D:\dessert\Model\bin\Debug\Model.pdb
+D:\dessert\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\dessert\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\dessert\Model\obj\Debug\Model.dll
+D:\dessert\Model\obj\Debug\Model.pdb

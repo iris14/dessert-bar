@@ -434,6 +434,8 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\npm.js" />
     <Content Include="js\zhuce.js" />
+    <Content Include="Front\step.ascx" />
+    <Content Include="Front\step_Edit.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -643,6 +645,20 @@
       <DependentUpon>publishCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Front\step.ascx.cs">
+      <DependentUpon>step.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\step.ascx.designer.cs">
+      <DependentUpon>step.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\step_Edit.ascx.cs">
+      <DependentUpon>step_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\step_Edit.ascx.designer.cs">
+      <DependentUpon>step_Edit.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.Master" />
