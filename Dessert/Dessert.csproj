@@ -69,9 +69,11 @@
   <ItemGroup>
     <Content Include="Admin\AdminManage.aspx" />
     <Content Include="Admin\Admin_Index.aspx" />
+    <Content Include="Admin\CourseCheck.aspx" />
     <Content Include="Admin\CourseDetail.aspx" />
     <Content Include="Admin\index.html" />
     <Content Include="Admin\PassCourse.aspx" />
+    <Content Include="Admin\Uncheck.aspx" />
     <Content Include="Admin\UserArticle.aspx" />
     <Content Include="Admin\UserManage.aspx" />
     <Content Include="App_Data\DessertDataBase.mdf" />
@@ -110,6 +112,7 @@
     <Content Include="Front\login.aspx" />
     <Content Include="Front\lunch.aspx" />
     <Content Include="Front\register.aspx" />
+    <Content Include="Front\step.ascx" />
     <Content Include="Front\WebForm1.aspx" />
     <Content Include="Front\WebForm2.aspx" />
     <Content Include="Front\registerSuc.aspx" />
@@ -465,6 +468,13 @@
     <Compile Include="Admin\Admin_Index.aspx.designer.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\CourseCheck.aspx.cs">
+      <DependentUpon>CourseCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CourseCheck.aspx.designer.cs">
+      <DependentUpon>CourseCheck.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\CourseDetail.aspx.cs">
       <DependentUpon>CourseDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -478,6 +488,13 @@
     </Compile>
     <Compile Include="Admin\PassCourse.aspx.designer.cs">
       <DependentUpon>PassCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Uncheck.aspx.cs">
+      <DependentUpon>Uncheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Uncheck.aspx.designer.cs">
+      <DependentUpon>Uncheck.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\UserArticle.aspx.cs">
       <DependentUpon>UserArticle.aspx</DependentUpon>
@@ -569,6 +586,13 @@
     </Compile>
     <Compile Include="Front\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Front\step.ascx.cs">
+      <DependentUpon>step.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Front\step.ascx.designer.cs">
+      <DependentUpon>step.ascx</DependentUpon>
     </Compile>
     <Compile Include="Front\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

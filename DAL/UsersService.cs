@@ -32,7 +32,7 @@ namespace ThreeLayer.DAL
         public bool InserUser(ThreeLayer.Model.Users myUser)
         {
             //插入用户信息
-            string strSql = "insert into [Users](UserName,UserTel,UserPwd,UserGender,UserCard,UserTime,UserIntegration) values('" + myUser.UserName + "','" + myUser.UserTel + "','" + myUser.UserPwd + "','女','" + myUser.UserCard + "','" + myUser.UserTime + "','0')";
+            string strSql = "insert into [Users](UserName,UserTel,UserPwd,UserGender,UserCard,UserTime,UserIntegration) values('" + myUser.UserName + "','" + myUser.UserTel + "','" + myUser.UserPwd + "',N'女','" + myUser.UserCard + "','" + myUser.UserTime + "','0')";
             
             sqlHelper sqlHelper = new sqlHelper();
             int status = sqlHelper.ModifyRecord(strSql);
@@ -56,12 +56,15 @@ namespace ThreeLayer.DAL
                 
             }
 
-        }
-
-        public bool UpdatePwd(ThreeLayer.Model.Users myUser)
-        {
-            string strsql = "update [Users] set "
         }*/
+
+        public int UpdateUserDetail(ThreeLayer.Model.Users myUser) 
+        {
+            string strsql = "update [Users] set UserName=N'" + myUser.UserName + "',UserTel='" + myUser.UserTel + "',UserGender=N'" + myUser.UserGender + "',UserEmail='" + myUser.UserEmail + "' where UserId='" + myUser.UserId + "'";
+            sqlHelper sqlHelper = new sqlHelper();
+            int status=sqlHelper.ModifyRecord(strsql);
+            return status;
+        }
         public DataSet SelectPersonData(ThreeLayer.Model.Users users)
         {
             //调取用户信息

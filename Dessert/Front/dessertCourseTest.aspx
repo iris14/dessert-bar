@@ -12,7 +12,6 @@
         <div>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
             <br />
-            <asp:Image ID="Image1" runat="server" Height="117px" ImageUrl="~/images/dessert/1.1.jpeg" Width="149px" />
         </div>
     </form>
 </body>
